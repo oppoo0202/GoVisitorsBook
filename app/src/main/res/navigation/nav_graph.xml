@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registerFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.govisitorsbook.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_selectFragment"
+            app:destination="@id/selectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.govisitorsbook.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectFragment"
+        android:name="com.example.govisitorsbook.SelectFragment"
+        android:label="fragment_select"
+        tools:layout="@layout/fragment_select" >
+        <action
+            android:id="@+id/action_selectFragment_to_qrFragment"
+            app:destination="@id/qrFragment" />
+        <action
+            android:id="@+id/action_selectFragment_to_visitListFragment"
+            app:destination="@id/visitListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qrFragment"
+        android:name="com.example.govisitorsbook.QrFragment"
+        android:label="fragment_qr"
+        tools:layout="@layout/fragment_qr" />
+    <fragment
+        android:id="@+id/visitListFragment"
+        android:name="com.example.govisitorsbook.VisitListFragment"
+        android:label="fragment_visit_list"
+        tools:layout="@layout/fragment_visit_list" />
+</navigation>

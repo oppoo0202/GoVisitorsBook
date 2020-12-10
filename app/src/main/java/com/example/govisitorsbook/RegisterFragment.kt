@@ -48,6 +48,8 @@ class RegisterFragment : Fragment() {
         }
 
 
+
+
         return root
 
     }

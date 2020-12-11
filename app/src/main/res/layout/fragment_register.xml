@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterFragment">
+    tools:context=".Login.RegisterFragment">
 
     <Button
         android:id="@+id/btn_register"
@@ -17,13 +17,13 @@
         app:layout_constraintTop_toBottomOf="@+id/signaturePad" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/phone_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName" />
+        app:layout_constraintEnd_toEndOf="@+id/name" />
 
     <TextView
         android:id="@+id/textView2"
@@ -50,7 +50,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="44dp"

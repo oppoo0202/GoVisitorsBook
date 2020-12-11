@@ -6,7 +6,7 @@
     app:startDestination="@id/loginFragment">
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.govisitorsbook.LoginFragment"
+        android:name="com.example.govisitorsbook.Login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -18,13 +18,9 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.example.govisitorsbook.RegisterFragment"
+        android:name="com.example.govisitorsbook.Login.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" >
-        <action
-            android:id="@+id/action_registerFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_register" />
     <fragment
         android:id="@+id/selectFragment"
         android:name="com.example.govisitorsbook.SelectFragment"
@@ -47,4 +43,5 @@
         android:name="com.example.govisitorsbook.VisitListFragment"
         android:label="fragment_visit_list"
         tools:layout="@layout/fragment_visit_list" />
+    <action android:id="@+id/action_global_loginFragment" app:destination="@id/loginFragment" />
 </navigation>

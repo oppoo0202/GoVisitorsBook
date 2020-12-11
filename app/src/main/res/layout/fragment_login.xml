@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginFragment">
+    tools:context=".Login.LoginFragment">
 
     <Button
         android:id="@+id/btn_login"
@@ -25,14 +25,12 @@
         app:layout_constraintEnd_toStartOf="@+id/btn_login"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+        app:layout_constraintTop_toBottomOf="@+id/recyc" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyc"
         android:layout_width="0dp"
         android:layout_height="150dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btn_login"
         app:layout_constraintHorizontal_bias="0.0"
